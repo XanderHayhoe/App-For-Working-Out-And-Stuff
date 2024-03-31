@@ -1,13 +1,19 @@
 import React from 'react'
-import {Button, Wrapper} from "./Home.styles.jsx"
+import {Button, FlexBox, Wrapper} from "./Home.styles.jsx"
 import BlogClickBox from '../../components/BlogClickBox/BlogClickBox.jsx'
 const Home = () => {
-    const imageUrl = process.env.PUBLIC_URL + '/images/nutritionLogo.png';
+    const nutritionImg = process.env.PUBLIC_URL + '/images/nutritionLogo.png';
 
   return (
     <Wrapper>
         <div>Home</div>
-        <BlogClickBox imageSrc={imageUrl} content={"Dieting"}/>
+        <FlexBox>
+            <BlogClickBox imageSrc={nutritionImg} content={"Dieting"}/>
+            <BlogClickBox imageSrc={nutritionImg} content={"Workouts"}/>
+            <BlogClickBox imageSrc={nutritionImg} content={"Blog"}/>
+            <BlogClickBox imageSrc={nutritionImg} content={"smthg else idk"}/>
+        </FlexBox>
+        
     </Wrapper>
   )
 }

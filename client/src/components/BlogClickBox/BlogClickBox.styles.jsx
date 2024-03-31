@@ -6,43 +6,45 @@ export const Button = styled.button`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 30vw; // 30% of the viewport width
-  height: 25vw; // Equal to the width to maintain aspect ratio
+  width: 30vw; 
+  height: 25vw; 
   background-color: #ffffff;
   border: 2px solid #000;
   cursor: pointer;
-  padding: 20px;
+  gap: 2rem;
+  padding: 2rem;
   box-sizing: border-box;
   margin: auto;
 
+ 
   @media (max-width: 768px) {
-    width: 50vw; // Increase the size on smaller screens
+    width: 50vw;
     height: 50vw;
   }
 
   @media (max-width: 480px) {
-    width: 80vw; // Further increase the size on very small screens
+    width: 80vw; 
     height: 80vw;
   }
 `;
 
 export const Image = styled.img`
-  max-width: 90%; // 90% of the button width
-  max-height: 60%; // 60% of the button height
+  max-width: 90%; 
+  max-height: 60%;
   object-fit: contain; 
 `;
 
 export const Content = styled.div`
   text-align: center;
   color: #000;
-  font-size: 4vw; // Size the text based on the width of the viewport
+  font-size: 4vw; 
   margin-top: auto;
 
   @media (max-width: 768px) {
-    font-size: 5vw; // Increase text size on smaller screens
+    font-size: 5vw; 
   }
 
   @media (max-width: 480px) {
-    font-size: 6vw; // Further increase text size on very small screens
+    font-size: 6vw; 
   }
 `;
